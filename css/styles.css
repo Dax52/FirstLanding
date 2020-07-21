@@ -1,6 +1,6 @@
-body {
+body * {
     margin: 0;
-    font-family: Nunito Sans, Arial;
+    font-family: Nunito Sans;
     box-sizing: border-box;
 }
 .button {
@@ -12,6 +12,13 @@ body {
     color: white;
     text-transform: uppercase;
 }
+.button1 {
+    height: 51px;
+}
+.button2 {
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #FFFFFF;
+}
 .header {
     background-color: black;
 }
@@ -20,6 +27,13 @@ body {
     margin: 0 auto;
 } 
 .header-content {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    padding-left: 90px;
+    padding-right: 90px;
     display: flex;
     justify-content: space-between;
     height: 83px;
@@ -39,20 +53,107 @@ body {
     text-decoration: none;
     color: white;
 }
-.main {
-    background: rgba(0, 0, 0, 0.7);
+.header-nav__activelink {
+    text-decoration: none;
+    color: #E3B873;
+}
+.phone {
+    text-decoration: underline;
 }
 .first-page {
+    position: relative;
     height: 707px;
     background-image: url('../images/first.jpg');
+    /*background-size: cover;*/
 }
-.title {
-    margin: 194px;
+.first-page__overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.first-page__content {
+    position: relative;
+    z-index: 1;
+    max-height: 305px;
+    padding-left: 135px;
+}
+.headtitle {
+    padding-top: 194px;
+    max-width: 550px;
     font-family: Yeseva One;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
     line-height: 53px;
     text-transform: uppercase;
+    color: #FFFFFF;
+}
+.title {
+    max-width: 253px;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+.maintext {
+    padding-top: 19px;
+    padding-bottom: 41px;
+    max-width: 504px;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+.text {
+    padding-top: 34px;
+    max-width: 442px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+.second-page {
+    height: 1074px;
+}
+.second-page__content {
+    padding-left: 135px;
+    padding-top: 176px;
+}
+.second-page__projectinfo {
+    padding-left: 135px;
+    padding-top: 42px;
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.second-page__projectinfo-element {
+    height: 50%;
+}
+.info-name {
+    padding-top: 34px;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+.info-text {
+    padding-top: 9px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
     color: #FFFFFF;
 }
