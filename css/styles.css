@@ -157,3 +157,8 @@ body * {
     line-height: 21px;
     color: #FFFFFF;
 }
+.second-page__projectdetails-image {
+    width: 679px;
+    height: 482px;
+    background-image: url(../images/second.jpg);
+}
