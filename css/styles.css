@@ -113,6 +113,7 @@ body * {
 }
 .text {
     padding-top: 34px;
+    padding-right: 50px;
     max-width: 442px;
     font-style: normal;
     font-weight: normal;
@@ -122,23 +123,27 @@ body * {
 }
 .second-page {
     height: 1074px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .second-page__content {
     padding-left: 135px;
     padding-top: 176px;
 }
 .second-page__projectinfo {
-    padding-left: 135px;
     padding-top: 42px;
-    max-height: 200px;
+    padding-right: 50px;
+    max-width: 442px;
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     flex-wrap: wrap;
+    /*align-content: left;*/
     justify-content: space-between;
 }
-.second-page__projectinfo-element {
+/* .second-page__projectinfo-element {
     height: 50%;
-}
+}*/
 .info-name {
     padding-top: 34px;
     font-family: Yeseva One;
@@ -156,6 +161,26 @@ body * {
     font-size: 13px;
     line-height: 21px;
     color: #FFFFFF;
+}
+.projectdetails-nav {
+    display: flex;
+}
+.projectdetails-nav__item {
+    padding-top: 107px;
+    padding-right: 60.5px;
+    padding-bottom: 52.68px;
+}
+.projectdetails-nav__link {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+}
+.projectdetails-nav__activelink{
+    color: #E3B873
 }
 .second-page__projectdetails-image {
     width: 679px;
