@@ -4,15 +4,18 @@ body * {
     box-sizing: border-box;
 }
 .button {
+    width: 161px;
+    height: 37px;
     background: #E3B873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     border-radius: 2px;
     border: 0;
-    padding: 13px 33px;
+    /*padding: 13px 33px;*/
     color: white;
     text-transform: uppercase;
 }
 .button1 {
+    width: 207px;
     height: 51px;
 }
 .button2 {
@@ -39,8 +42,6 @@ body * {
     height: 83px;
     align-items: center;
 }
-.logo {
-   color: #E3B873; 
 }
 .header-nav {
     list-style: none;
@@ -60,13 +61,13 @@ body * {
 .phone {
     text-decoration: underline;
 }
-.first-page {
+.page1 {
     position: relative;
     height: 707px;
     background-image: url('../images/first.jpg');
     /*background-size: cover;*/
 }
-.first-page__overlay {
+.page1__overlay {
     content: '';
     position: absolute;
     top: 0;
@@ -75,7 +76,7 @@ body * {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.7);
 }
-.first-page__content {
+.page1__content {
     position: relative;
     z-index: 1;
     max-height: 305px;
@@ -121,29 +122,29 @@ body * {
     line-height: 27px;
     color: #FFFFFF;
 }
-.second-page {
+.page2 {
     height: 1074px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.second-page__content {
+.page2__content {
     padding-left: 135px;
     padding-top: 176px;
 }
-.second-page__projectinfo {
+.page2__projectinfo {
     padding-top: 42px;
     padding-right: 50px;
     max-width: 442px;
     display: flex;
-    /*flex-direction: column;*/
+    flex-direction: row;
     flex-wrap: wrap;
-    /*align-content: left;*/
     justify-content: space-between;
+    padding-bottom: 81.1px;
 }
-/* .second-page__projectinfo-element {
-    height: 50%;
-}*/
+.page2__projectinfo-element {
+    width: 50%;
+}
 .info-name {
     padding-top: 34px;
     font-family: Yeseva One;
@@ -179,11 +180,51 @@ body * {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
 }
-.projectdetails-nav__activelink{
-    color: #E3B873
-}
-.second-page__projectdetails-image {
+.page2__projectdetails-image {
     width: 679px;
     height: 482px;
     background-image: url(../images/second.jpg);
 }
+.vector {
+    padding-right: 25px;
+    padding-left: 16px;
+}
+.dot {
+    padding-right: 9px;
+}
+.page3 {
+    height: 1074px;
+    margin-top: -300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subtitle {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.page3__camera {
+    padding-top: 13px;
+    padding-bottom: 31px;
+}
+.page3__video {
+    width: 817px;
+    height: 434px;
+    position: relative;
+    background-image: url(../images/image6.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.play-button {
+    z-index: 1;
+}
+.logo {
+    color: #E3B873; 
