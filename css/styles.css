@@ -42,7 +42,6 @@ body * {
     height: 83px;
     align-items: center;
 }
-}
 .header-nav {
     list-style: none;
     display: flex;
@@ -209,6 +208,9 @@ body * {
     text-transform: uppercase;
     color: #FFFFFF;
 }
+.subtitle1 {
+    color: #181818;
+}
 .page3__camera {
     padding-top: 13px;
     padding-bottom: 31px;
@@ -224,7 +226,84 @@ body * {
     align-items: center;
 }
 .play-button {
+    width: 85px;
+    height: 85px;
     z-index: 1;
 }
+.page3__line {
+    padding-top: 62.5px;
+    width: 55px;
+}
+.page3__text {
+    padding-top: 34.46px;
+    width: 681px;
+    height: 130px;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    color: #363636;
+}
+.page3__inputblock {
+    padding-top: 91.5px;
+    width: 769px;
+    height: 51px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 34px;
+}
+.inputblock {
+    width: 260px;
+    height: 45px;
+}
+.inputbox-title {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(54, 54, 54, 0.5);
+}
+.inputbox {
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+.page3__checkbox {
+    padding-top: 120px;
+}
+.label {
+    cursor: pointer;
+}
+.checkbox{
+    display: none;
+}
+.fake{
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+}
+.fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+}
+.checkbox:checked + .fake::before{
+    opacity: 1;
+}
+.checkbox-text {
+    font-size: 14px;
+    line-height: 163.68%;
+    color: #181818;
+}
+.page4 {
+    height: 707px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .logo {
-    color: #E3B873; 
+    color: #E3B873;
+}
