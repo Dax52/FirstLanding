@@ -229,6 +229,8 @@ body * {
     width: 85px;
     height: 85px;
     z-index: 1;
+    margin: 0;
+    background-image: url(../images/play.svg);
 }
 .page3__line {
     padding-top: 62.5px;
