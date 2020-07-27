@@ -229,8 +229,10 @@ body * {
     width: 85px;
     height: 85px;
     z-index: 1;
-    margin: 0;
+    margin: 0 auto;
     background-image: url(../images/play.svg);
+    background-position: center;
+    background-size: 100px;
 }
 .page3__line {
     padding-top: 62.5px;
@@ -270,8 +272,9 @@ body * {
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
 .page3__checkbox {
-    padding-top: 120px;
+    padding-top: 34px;
 }
+/* checkbox */
 .label {
     cursor: pointer;
 }
@@ -299,12 +302,173 @@ body * {
     line-height: 163.68%;
     color: #181818;
 }
+/* /checkbox */
 .page4 {
-    height: 707px;
+    height: 800px;
     align-items: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.page4__content {
+    width: 1236px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.page4__content-element {
+    width: 392px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.page4__content-element1 {
+    width: 330px;
+    margin-top: -127px;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+.page4__content-element-title {
+    padding-top: 25px;
+    padding-left: 34px;
+    font-family: Yeseva One;
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+}
+.page4__content-element-list {
+    padding-top: 13px;
+    /*padding-left: 34px;*/
+    padding-bottom: 49px;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+}
+.page4__content-element-price {
+    margin-top: -26px;
+    width: 228px;
+    height: 54px;
+    background: #E3B873;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    align-content: center;
+}
+.page5 {
+    margin-top: 241px;
+    height: 707px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.page5__infoblock {
+    height: 645px;
+    width: 703px;
+    background-image: url(../images/image61.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*align-items: flex-end;*/
+}
+.page5__infoblock-list {
+    height: 474px;
+    width: 375px;
+    margin-top: 117px;
+    margin-left: 249px;
+    display: flex;
+}
+.page5__infoblock-list ol {
+    list-style-type: none;
+    counter-reset: num;
+    margin: 0 0 0 60px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.page5__infoblock-list ol li {
+    position: relative;
+}
+.page5__infoblock-list ol li::before {
+    content:'0' counter(num);
+    counter-increment: num;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -72px;
+    width: 41.76px;
+    height: 41.76px;
+    font-family: Yeseva One;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    text-align: center;
+    background: #E3B873;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 30px;
+}
+/*.listtext {
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
+}*/
+.page5__form {
+    width: 506px;
+    height: 509px;
+    padding-top: 14px;
+    padding-bottom: 27px;
+    background: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.page5__form-text {
+    /*margin-top: 14px;*/
+    width: 297px;
+    height: 47px;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.page5__form-input {
+    padding-top: 39px;
+    width: 408px;
+    height: 283px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.page5__form-input-title {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.page5__inputbox {
+    background-color: #131313;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.page5__checkbox-text {
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
 }
 .logo {
     color: #E3B873;
