@@ -508,6 +508,70 @@ body * {
     color: #E3B873;
     text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
 }
+.page6 {
+    position: relative;
+    margin-top: 242px;
+    height: 864px;
+    background-image: url(../images/page6back.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.page6__textblock {
+    position: relative;
+    z-index: 1;
+    width: 411px;
+    margin-top: 138px;
+    margin-left: 99px;
+}
+.page6__nav {
+    position: relative;
+    margin-top: 47px;
+    width: 299px;
+    height: 518px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.page6__nav ul {
+    padding: 0;
+}
+.page6__nav ul li {
+    list-style: none;
+    margin 0;
+}
+.styletypes-nav__link {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+.page6__photoblock1 {
+    position: relative;
+    margin-top: -41px;
+    margin-bottom: -42px;
+    z-index: 1;
+    width: 354px;
+    height: 946 px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.page6__photoblock2 {
+    position: relative;
+    margin-top: -113px;
+    margin-bottom: 40px;
+    margin-right: 102px;
+    z-index: 1;
+    width: 354px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.page7 {
+    height: 1107px;
+}
 .logo {
     color: #E3B873;
 }
