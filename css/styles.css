@@ -82,7 +82,7 @@ body {
 .page1__content {
     position: relative;
     z-index: 1;
-    max-height: 305px;
+    height: 305px;
     padding-left: 135px;
 }
 .headtitle {
@@ -733,4 +733,50 @@ body {
 }
 .logo {
     color: #E3B873;
+}
+@media only screen and (max-width: 1300px){
+    .nomobile {
+        display: none;
+    }
+    .header-content {
+        height: 57px;
+        padding: 0 18px;
+
+    }
+    .page1 {
+        width: auto;
+        height: 476px;
+        background-size: auto 100%;
+    }
+    .page1__content {
+        height: 476px;
+        padding: 85px 18px 61px 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .headtitle {
+        padding:  0;
+        width: auto;
+        font-size: 23px;
+        line-height: 31px;
+    }
+    .maintext {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .button {
+        font-family: Nunito Sans;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 15px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .button1 {
+        width: auto;
+        max-width: 340px;
+    }
+    
 }
