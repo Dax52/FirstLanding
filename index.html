@@ -42,6 +42,7 @@
                <div class="page2__content">
                 <h2 class="title">Completed projects</h2>
                 <p class="text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+                <div class="page2__projectdetails-image mobile"></div>
                 <div class="page2__projectinfo">
                     <div class="page2__projectinfo-element">
                         <h4 class="info-name">City:</h4>
@@ -60,7 +61,7 @@
                          <p class="info-text">Upon reques</p>
                      </div>
                 </div>
-                <div class="vector-nav">
+                <div class="vector-nav nomobile">
                     <a href="#project"><img class="vector" src="./images/Group.svg" alt="to the left"></a>
                     <a href="#project"><img class="dot" src="./images/dot.svg" alt="1"></a>
                     <a href="#project"><img class="dot" src="./images/dot2.svg" alt="2"></a>
@@ -68,7 +69,7 @@
                     <a href="#project"><img class="vector" src="./images/Group-2.svg" alt="to the right"></a>
                 </div>
                 </div>
-               <div class="page2__projectdetails">
+               <div class="page2__projectdetails nomobile">
                    <nav>
                        <ul class="projectdetails-nav">
                             <li class="projectdetails-nav__item"><a class="projectdetails-nav__link logo" href="#projects">Rostov-on-Don, Admiral</a></li>
@@ -99,15 +100,22 @@
                     <p class="inputbox-title">Phone</p>
                     <input class="inputbox" type="text" id="phone" placeholder="Your phone number:">
                 </div>
+                <div class="page5__checkbox mobile">
+                    <label class="label">
+                      <input type="checkbox" class="checkbox" >
+                      <span class="fake"></span>
+                      <span class="page5__checkbox-text">I agree to the processing of personal data.</span>
+                    </label>
+                  </div>
                 <button class="button button1">Submit</button>
             </div>
-            <div class="page3__checkbox">
+            <div class="page3__checkbox nomobile">
                 <label class="label">
                   <input type="checkbox" class="checkbox" >
                   <span class="fake"></span>
                   <span class="checkbox-text">I agree to the processing of personal data.</span>
                 </label>
-              </div>
+            </div>
         </section>
         <section class="container page4">
             <h3 class="subtitle subtitle1">TYPES OF REPAIR</h2>
@@ -172,7 +180,7 @@
                 </div>
             </div>
         </section>
-        <section class="container page5" id="mesurement">
+        <section class="container page5 nomobile" id="mesurement">
             <div class="page5__infoblock">
                 <div class="page5__infoblock-list">
                     <ol>
@@ -218,7 +226,10 @@
         <section class="container page6" id="team">
             <div class="page6__textblock">
                 <h2 class="title">We realize your wildest fantasies </h2>
-                <nav class="page6__nav">
+                <div class="page6__photoblock1 mobile">
+                    <img src="./images/image5.jpg" alt="">
+                </div>
+                <nav class="page6__nav nomobile">
                     <ul class="styletypes-nav">
                          <li><a class="styletypes-nav__link logo" href="#team">American classic</a></li>
                          <li><a class="styletypes-nav__link" href="#team">Loft</a></li>
@@ -234,17 +245,17 @@
                     </ul>
                 </nav>
             </div>
-            <div class="page1__overlay"></div>
-            <div class="page6__photoblock1">
+            <div class="page1__overlay nomobile"></div>
+            <div class="page6__photoblock1 nomobile">
                 <img src="./images/image5.jpg" alt="">
                 <img src="./images/image51.jpg" alt="">
             </div>
-            <div class="page6__photoblock2">
+            <div class="page6__photoblock2 nomobile">
                 <img src="./images/image52.jpg" alt="">
                 <img src="./images/image53.jpg" alt="">
             </div>
         </section>
-        <section class="container page7" id="reviews">
+        <section class="container page7 nomobile" id="reviews">
             <h3 class="subtitle subtitle1">our clients</h2>
             <div class="page3__camera"><img src="./images/clients.svg" alt=""></div>
             <div class="page3__text page7__text">
@@ -320,7 +331,7 @@
                     
                     <div class="page5__form page8__form-data">
                         <div class="page8__form-input">
-                            <div class="inputblock inputplock1">
+                            <div class="inputblock inputblock1">
                                 <p class="page5__form-input-title">Name</p>
                                 <input class="page5__inputbox" type="text" id="name" placeholder="What is your name:">
                             </div>
@@ -356,7 +367,7 @@
             </div>
         </section>
     </main>
-    <footer class="header">
+    <footer class="header nomobile">
         <div class="container header-content">
             <div class="logo">
                 IC "Repair Design Project"
