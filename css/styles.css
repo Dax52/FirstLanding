@@ -942,6 +942,16 @@ body {
         width: 340px;
     }
     .page8__content {
+        order: 1;
         width: 340px;
+    }
+    .page8__content-map {
+        width: 340px;
+        height: 250px;
+    }
+    .page8__content-map img {
+        height: 100%;
+        width: auto;
+        /* object-fit: contain; */
     }
 }
