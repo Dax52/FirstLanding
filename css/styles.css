@@ -229,6 +229,7 @@ body {
     height: 434px;
     position: relative;
     background-image: url(../images/image6.jpg);
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -830,6 +831,22 @@ body {
     .page2__projectdetails-image {
         width: 340px;
         height: 241px;
+        background-size: contain;
+    }
+    .slider {
+        width: inherit;
+        padding: 0 13px 0 13px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .slider__button {
+        width: 36px;
+        height: 36px;
+        padding: 12px;
+        background: #E3B873;
+        border-radius: 50%;
     }
     .page3 {
         height: 840px;
@@ -876,6 +893,10 @@ body {
     }
     .inputbox {
         background-color: black;
+    }
+    .page5__inputbox {
+        background-color: black;
+        border: none;
     }
     .page5__checkbox {
         margin: 0;
@@ -925,14 +946,12 @@ body {
         width: 340px;
         align-items: center;
     }
-    .page6__photoblock1 {
+    .page6__photoblock3 {
         margin: 24px 0 0 0;
         width: 340px;
         height: 242px;
-    }
-    .page6__photoblock1 img {
-        height: 100%;
-        object-fit: cover;
+        background-image: url(../images/image54.jpg);
+        background-size: contain;
     }
     .page8 {
         height: 1100px;
