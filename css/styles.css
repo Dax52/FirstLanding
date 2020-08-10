@@ -21,14 +21,17 @@ body {
     text-align: center;
     color: white;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .button1 {
     width: 207px;
     height: 51px;
-}
-.button2 {
     background: rgba(0, 0, 0, 0);
     border: 1px solid #FFFFFF;
+}
+.button1:hover, .button2 {
+    background: #E3B873;
+    border: 0;
 }
 .header {
     background-color: black;
@@ -61,8 +64,7 @@ body {
     text-decoration: none;
     color: white;
 }
-.header-nav__activelink {
-    text-decoration: none;
+.header-nav__link:hover, .styletypes-nav__link:hover, .projectdetails-nav__link:hover {
     color: #E3B873;
 }
 .phone {
@@ -188,6 +190,9 @@ body {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
 }
+/* .projectdetails-nav__link:hover {
+    color: #E3B873;    
+} */
 .page2__projectdetails-image {
     width: 679px;
     height: 482px;
@@ -372,8 +377,13 @@ body {
     align-content: center;
 }
 .page5 {
-    margin-top: 241px;
     height: 707px;
+    background-image: url(../images/image61.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.page5-page {
+    margin-top: 241px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -381,9 +391,6 @@ body {
 .page5__infoblock {
     height: 645px;
     width: 703px;
-    background-image: url(../images/image61.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
     /*align-items: flex-end;*/
 }
 .page5__infoblock-list {
@@ -524,13 +531,14 @@ body {
 }
 .page6 {
     position: relative;
-    margin-top: 242px;
     height: 864px;
-    background-image: url(../images/page6back.jpg);
+    background-image: url(../images/page6back.jpg);  
+}
+.page6-page {
+    margin-top: 242px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
 }
 .page6__textblock {
     position: relative;
@@ -566,7 +574,7 @@ body {
     margin-bottom: -42px;
     z-index: 1;
     width: 354px;
-    height: 946 px;
+    height: 946px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -585,12 +593,14 @@ body {
 .page7 {
     margin-top: 110px;
     height: 1107px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-image: url(../images/page7back.jpg);
     background-position: bottom;
     background-repeat: repeat-x;
+}
+.page7-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .page7__text {
     width: 376px;
@@ -659,6 +669,8 @@ body {
 .page8 {
     height: 954px;
     background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+}
+.page8-page {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -933,10 +945,12 @@ body {
         margin-bottom: -20px;
     }
     .page6 {
-        margin: 0;
-        padding: 0 18px 0 18px;
         height: 211px;
         background-image: none;
+    }
+    .page6-page {
+        margin: 0;
+        padding: 0 18px 0 18px;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
