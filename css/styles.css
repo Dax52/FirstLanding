@@ -841,7 +841,7 @@ body {
         line-height: 15px;
     }
     .page2__projectdetails-image {
-        width: 340px;
+        max-width: 340px;
         height: 241px;
         background-size: contain;
     }
