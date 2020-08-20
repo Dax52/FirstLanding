@@ -190,14 +190,13 @@ body {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
 }
-/* .projectdetails-nav__link:hover {
-    color: #E3B873;    
-} */
+
 .page2__projectdetails-image {
     width: 679px;
     height: 482px;
     background-image: url(../images/second.jpg);
 }
+
 .vector {
     padding-right: 25px;
     padding-left: 16px;
@@ -966,7 +965,7 @@ body {
         width: 340px;
         height: 242px;
         background-image: url(../images/image54.jpg);
-        background-size: contain;
+        background-size: cover;
     }
     .page8 {
         height: 1100px;
