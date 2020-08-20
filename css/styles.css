@@ -843,7 +843,7 @@ body {
         width: 100%;
         max-width: 340px;
         height: 241px;
-        background-size: contain;
+        background-size: cover;
     }
     .slider {
         width: inherit;
