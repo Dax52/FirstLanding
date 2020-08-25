@@ -64,9 +64,7 @@ body {
     text-decoration: none;
     color: white;
 }
-.header-nav__link:hover, .styletypes-nav__link:hover, .projectdetails-nav__link:hover {
-    color: #E3B873;
-}
+
 .phone {
     text-decoration: underline;
 }
@@ -189,6 +187,10 @@ body {
     line-height: 19px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
+}
+
+.header-nav__link:hover, .styletypes-nav__link:hover, .projectdetails-nav__link:hover, .projectdetails-nav__link-active {
+    color: #E3B873;
 }
 
 .page2__projectdetails-image {

@@ -1,6 +1,19 @@
 // Задаем начальное значение состояния страницы
 let stateproject = 0;
 let stateteam = 0;
+// "Элементы DOM для слайдеров"
+const projectlink = document.getElementsByClassName("projectdetails-nav__link");
+const dots = document.getElementsByClassName("dot");
+const arrow = document.getElementsByClassName("vector");
+const arrowmobile = document.getElementsByClassName("slider__button");
+
+const projectimg = document.getElementById("projects__img");
+const projectcity = document.getElementById("projects__city");
+const prijectarea = document.getElementById("projects__area");
+const projecttime = document.getElementById("projects__time");
+const projectimgmobile = document.getElementById("projects__img-mobile");
+const teamphotomobile = document.getElementById("team__photo-mobile");
+// console.log(projectlink);
 // Массивы элементов для слайдера
 const repairProjectsArr = [
     {
@@ -29,56 +42,55 @@ const teamPhotoArr = [
     './images/image57.jpg'
 ];
 // Обработчики нажатий десктоп
-document.getElementById("projects__right").addEventListener("click", () => {
-    stateproject = changeState(stateproject, repairProjectsArr.length, 1);
-    repairProjectsreplace (stateproject);
-});
-document.getElementById("projects__left").addEventListener("click", () => {
-    stateproject = changeState(stateproject, repairProjectsArr.length, -1);
-    repairProjectsreplace (stateproject);
-});
-document.getElementById("project1").addEventListener("click", () => {
-    stateproject = 0;
-    repairProjectsreplace (stateproject);
-});
-document.getElementById("project2").addEventListener("click", () => {
-    stateproject = 1;
-    repairProjectsreplace (stateproject);
-});
-document.getElementById("project3").addEventListener("click", () => {
-    stateproject = 2;
-    repairProjectsreplace (stateproject);
-});
-document.getElementById("project1dot").addEventListener("click", () => {
-    stateproject = 0;
-    repairProjectsreplace (stateproject);
-});
-document.getElementById("project2dot").addEventListener("click", () => {
-    stateproject = 1;
-    repairProjectsreplace (stateproject);
-});
-document.getElementById("project3dot").addEventListener("click", () => {
-    stateproject = 2;
-    repairProjectsreplace (stateproject);
-});
+for (let element of arrow) {
+    element.addEventListener("click", () => {
+        if (element.id === "projects__right") {
+            stateproject = changeState(stateproject, repairProjectsArr.length, 1);
+            repairProjectsreplace (stateproject);
+        }   
+        else if (element.id === "projects__left") {
+            stateproject = changeState(stateproject, repairProjectsArr.length, -1);
+            repairProjectsreplace (stateproject);
+        }
+    });
+}
+for (let i=0; i < projectlink.length; i++ ) {
+    projectlink[i].addEventListener("click", () => {
+        if (i != stateproject) {
+            stateproject = i;
+            repairProjectsreplace (stateproject);
+        }
+    });
+}
+for (let i=0; i<dots.length; i++) {
+    dots[i].addEventListener("click", () => {
+        if (i != stateproject) {
+            stateproject = i;
+            repairProjectsreplace (stateproject);
+        }
+    });
+}
 // Обработчики нажатий мобильная
-document.getElementById("mobile-slider__right").addEventListener("click", () => {
-    stateproject = changeState(stateproject, repairProjectsArr.length, 1);
-    repairProjectsreplace (stateproject);
-});
-document.getElementById("mobile-slider__left").addEventListener("click", () => {
-    stateproject = changeState(stateproject, repairProjectsArr.length, -1);
-    repairProjectsreplace (stateproject);
-});
-document.getElementById("mobile-slider2__right").addEventListener("click", () => {
-    stateteam = changeState(stateteam, teamPhotoArr.length, 1);
-    teamPhotoMobilereplace (stateteam);
-});
-document.getElementById("mobile-slider2__left").addEventListener("click", () => {
-    stateteam = changeState(stateproject, teamPhotoArr.length, -1);
-    teamPhotoMobilereplace (stateteam);
-});
-
+for (let element of arrowmobile) {
+    element.addEventListener("click", () => {
+        if (element.parentElement.id === "mobile-slider__right") {
+            stateproject = changeState(stateproject, repairProjectsArr.length, 1);
+            repairProjectsreplace (stateproject);    
+        }
+        else if (element.parentElement.id === "mobile-slider__left") {
+            stateproject = changeState(stateproject, repairProjectsArr.length, -1);
+            repairProjectsreplace (stateproject);    
+        }
+        else if (element.parentElement.id === "mobile-slider2__right") {
+            stateteam = changeState(stateteam, teamPhotoArr.length, 1);
+            teamPhotoMobilereplace (stateteam);
+        }
+        else if (element.parentElement.id === "mobile-slider2__left") {
+            stateteam = changeState(stateteam, teamPhotoArr.length, -1);
+            teamPhotoMobilereplace (stateteam);
+        }
+    });
+}
 // Функция изменения состояния страницы со слайдером
 function changeState (currentstate, arraylength, step) {
     let newstate;
@@ -96,19 +108,23 @@ function changeState (currentstate, arraylength, step) {
 //Функция вывода на экран нового состояния
 function repairProjectsreplace (id) {
     // Меняем содержимое в десктопной версии
-    document.getElementById("projects__img").style.backgroundImage = `url(${repairProjectsArr[id].img})`;
-    document.getElementById("projects__city").innerHTML = repairProjectsArr[id].city;
-    document.getElementById("projects__area").innerHTML = repairProjectsArr[id].area;
-    document.getElementById("projects__time").innerHTML = repairProjectsArr[id].time;
+    projectimg.style.backgroundImage = `url(${repairProjectsArr[id].img})`;
+    projectcity.innerHTML = repairProjectsArr[id].city;
+    prijectarea.innerHTML = repairProjectsArr[id].area;
+    projecttime.innerHTML = repairProjectsArr[id].time;
     // Меняем точки
-    let dots = document.getElementsByClassName("dot");
     for (i=0; i < dots.length; i++) {
         dots[i].src = "./images/dot2.svg";
     }
     dots[id].src = "./images/dot.svg";
+    //Меняем активную ссылку
+    for (i=0; i < projectlink.length; i++) {
+        projectlink[i].className = "projectdetails-nav__link";
+    }
+    projectlink[id].className = "projectdetails-nav__link projectdetails-nav__link-active";
     // Меняем картинку в мобильной версии
-    document.getElementById("projects__img-mobile").style.backgroundImage = `url(${repairProjectsArr[id].img})`;
+    projectimgmobile.style.backgroundImage = `url(${repairProjectsArr[id].img})`;
 }
 function teamPhotoMobilereplace (id) {
-    document.getElementById("team__photo-mobile").style.backgroundImage = `url(${teamPhotoArr[id]})`;
+    teamphotomobile.style.backgroundImage = `url(${teamPhotoArr[id]})`;
 } 
